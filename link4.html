@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<title>Intellect Bloggers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<style>
+.w3-tangerine {
+  font-family: "Tangerine", serif;
+  font-weight: 900;
+}
+</style>
+<body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="basicsofbio.html" class="w3-bar-item w3-button">Bio-informatics</a>
+  <a href="cancer.html" class="w3-bar-item w3-button">Types of cancer</a>
+  <a href="approach.html" class="w3-bar-item w3-button">Bio-informatics in cancer research</a>
+  <a href="analysis.html" class="w3-bar-item w3-button">Analysis of Biological data</a>
+  <a href="cbio.html" class="w3-bar-item w3-button">cBioPortal</a>
+  <a href="ualcan.html" class="w3-bar-item w3-button">UALCAN</a>
+  <a href="km.html" class="w3-bar-item w3-button">KM Plotter</a>
+</div>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <header class="w3-container w3-center w3-padding-small w3-2019-peach-pink w3-text-purple w3-hover-purple">
+    <h1><center> <p class="w3-jumbo w3-tangerine">Intellect Bloggers</p></center></h1>
+    <h2><p class="w3-xx large w3-tangerine">Welcome to the blog of <span class="w3-tag">Intellect Bloggers</span></p></h2>
+  </header>
+  <div class="w3-container">
+    <h1>BIO-INFORMATICS</h1>
+
+  </div>
+</div>
+
+<img src="images\bioinformatics.jpeg" alt="bioinformatics" style="width:100%">
+
+<div class="w3-container w3-margin">
+<p>7 million people die every year due to cancer. By next year, this will become 16 million. Researchers identified about 200 varieties of cancer. Cancer is caused because of rapid cell growth in the body which leads to death. Countries like Asia, South America, Africa and Central America counts for 70% of the cancer related deaths in the overall world population. On the other hands, bioinformation is an inter-disciplinary field which includes Computer Science, Mathematics and other. Huge biological data can be stored, analysed and manipulated in using bioinformatics. Advanced tools and effective algorithms are helpful in analysing these biological data. Thus, in this some of the databases that provide cancer related data were discussed.</p>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<footer class="w3-container w3-2019-peach-pink w3-padding-32 w3-margin-top">
+
+</footer>
+</body>
+</html>

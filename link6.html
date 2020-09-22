@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<title>Intellect Bloggers</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-2019.css">
+<style>
+.w3-tangerine {
+  font-family: "Tangerine", serif;
+  font-weight: 900;
+}
+</style>
+<body>
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="basics.html" class="w3-bar-item w3-button">Cloud computing</a>
+  <a href="dep.html" class="w3-bar-item w3-button">Cloud deployment models</a>
+  <a href="scale.html" class="w3-bar-item w3-button">Cloud scalability</a>
+  <a href="hori.html" class="w3-bar-item w3-button">Horizontal scalability</a>
+  <a href="vert.html" class="w3-bar-item w3-button">Vertical scalability</a>
+
+</div>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <header class="w3-container w3-center w3-padding-small w3-2019-peach-pink w3-text-purple w3-hover-purple">
+    <h1><center> <p class="w3-jumbo w3-tangerine">Intellect Bloggers</p></center></h1>
+    <h2><p class="w3-xx large w3-tangerine">Welcome to the blog of <span class="w3-tag">Intellect Bloggers</span></p></h2>
+  </header>
+  <div class="w3-container">
+    <h1>CLOUD COMPUTING</h1>
+
+  </div>
+</div>
+
+<img src="images\cloud.jpeg" alt="cloudcomp" style="width:100%">
+
+<div class="w3-container w3-margin">
+<p>Huge data centres with enormous data are present in recent times. Cloud computing is a technology
+that offers way to use the data which is in cloud storage. Clients can demand for the cloud service
+and using ‘pay-per-use’ method they can make use of it. The cloud service provider serves this to
+the cloud users (clients). In short, cloud computing is a process which allows us to store, manage
+and compute/analyse the data. Cloud provides various services and resources for the user’s
+convenience and the user will have access to the data in the cloud by using the Internet connection.
+In this article, we will discuss some of the cloud deployment models.</p>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+<footer class="w3-container w3-2019-peach-pink w3-padding-32 w3-margin-top">
+
+</footer>
+</body>
+</html>
